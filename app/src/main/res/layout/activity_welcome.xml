@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/start_background"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="461dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/popcorn"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/start_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:paddingHorizontal="25dp"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="@string/welcome_message"/>
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="237dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/button_background"
+            android:text="@string/button_start" />
+    </LinearLayout>
+
+</LinearLayout>

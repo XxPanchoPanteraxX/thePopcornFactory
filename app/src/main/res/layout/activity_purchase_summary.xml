@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".PurchaseSummaryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/tvPurchaseSummary"
+            android:text="@string/purchase_summary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="20dp"
+            android:background="@color/yellow"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:text="@string/almost_done"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMovieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:text="You will watch MOVIE_NAME"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:text="@string/name"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/letra_gris_claro"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:text="@string/payment_method"/>
+        <Spinner
+            android:id="@+id/spPaymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/letra_gris_claro"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:text="@string/your_seat"/>
+        <TextView
+            android:id="@+id/tvSeatNumber"
+            android:layout_width="@dimen/seatImage"
+            android:layout_height="@dimen/seatImage"
+            android:text="0"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:paddingTop="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/ic_seat_selected"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPurchase"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:background="@drawable/round_button"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:text="@string/reservate"/>
+
+</LinearLayout>
